@@ -264,7 +264,49 @@
 
   <section class="schedule">
     <h2 class="section-title">Book a Quote</h2>
-    <iframe src="mailto:rud954@gmail.com" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <iframe src="mailto:rud954@gmail.com" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> <section id="quote-section" style="padding: 3rem; background: #f9f9f9;">
+  <h2 style="text-align:center; color:#0b3d91;">Get a Free Quote</h2>
+  <form id="quoteForm" style="max-width: 600px; margin: 2rem auto;" action="https://formspree.io/f/yourformid" method="POST" enctype="multipart/form-data">
+    
+    <label for="name">Full Name:</label><br />
+    <input type="text" name="name" required style="width:100%; padding:10px; margin-bottom:1rem;" /><br />
+
+    <label for="email">Email:</label><br />
+    <input type="email" name="email" required style="width:100%; padding:10px; margin-bottom:1rem;" /><br />
+
+    <label for="phone">Phone Number:</label><br />
+    <input type="tel" name="phone" required style="width:100%; padding:10px; margin-bottom:1rem;" /><br />
+
+    <label for="service">Service Inquiry:</label><br />
+    <select name="service" id="serviceSelect" required style="width:100%; padding:10px; margin-bottom:1rem;">
+      <option value="" disabled selected>Select a service</option>
+      <option value="Driveway Cleaning">Driveway Cleaning</option>
+      <option value="Roof Soft Wash">Roof Soft Wash</option>
+      <option value="House Wash">House Wash</option>
+      <option value="Fence or Deck Cleaning">Fence or Deck Cleaning</option>
+      <option value="Gutter Cleaning">Gutter Cleaning</option>
+      <option value="Window Washing">Window Washing</option>
+      <option value="Commercial Pressure Washing">Commercial Pressure Washing</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <div id="otherServiceField" style="display:none; margin-bottom:1rem;">
+      <label for="otherService">Please specify:</label><br />
+      <input type="text" name="otherService" style="width:100%; padding:10px;" />
+    </div>
+
+    <label for="message">Message (Optional):</label><br />
+    <textarea name="message" rows="4" style="width:100%; padding:10px; margin-bottom:1rem;"></textarea><br />
+
+    <label for="file">Upload a Photo (optional):</label><br />
+    <input type="file" name="file" accept="image/*" style="margin-bottom: 1rem;" /><br />
+
+    <button type="submit" style="padding:12px 25px; background:#0b3d91; color:#fff; border:none; border-radius:5px; cursor:pointer;">
+      Submit Quote Request
+    </button>
+  </form>
+</section>
+
   </section>
 
   <footer>
